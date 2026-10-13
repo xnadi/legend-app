@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>나는 전설이다 · 개인정보처리방침</title>
+<style>
+ :root{--bg:#f7f5f1;--ink:#24212b;--muted:#6b6576;--line:#e3ddd3;--accent:#6d45a8}
+ @media (prefers-color-scheme:dark){:root{--bg:#15131c;--ink:#ece8f3;--muted:#a49db0;--line:#2e2a38;--accent:#b79cff}}
+ body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.7 -apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Noto Sans KR",sans-serif}
+ main{max-width:720px;margin:0 auto;padding:40px 16px 80px}
+ h1{font-size:26px;margin:0 0 4px}
+ h2{font-size:19px;margin:36px 0 8px;color:var(--accent)}
+ p,li{color:var(--ink)}
+ .muted{color:var(--muted);font-size:14px}
+ table{width:100%;border-collapse:collapse;font-size:15px;margin:8px 0}
+ th,td{border-bottom:1px solid var(--line);padding:8px 6px;text-align:left;vertical-align:top}
+ hr{border:0;border-top:1px solid var(--line);margin:56px 0}
+ nav a{color:var(--accent)}
+</style>
+</head>
+<body>
+<main>
+<nav class="muted"><a href="#ko">한국어</a> · <a href="#en">English</a></nav>
+
+<section id="ko">
+<h1>개인정보처리방침</h1>
+<p class="muted">나는 전설이다 (Be a Legend) · 시행일 2026년 10월 13일</p>
+
+<p>이 방침은 iPhone 앱 「나는 전설이다」(이하 "앱")가 어떤 정보를 어디에 보내고 얼마나 보관하는지 설명합니다. 앱은 광고를 넣지 않고, 사용자를 추적하지 않으며, 분석 도구를 쓰지 않습니다.</p>
+
+<h2>1. 기기에만 저장되는 정보</h2>
+<p>목표, 카드, 카드 그림, 후기, 도장 기록, 전설 기록, 내 캐릭터, 설정은 모두 사용자의 iPhone 안에만 저장됩니다. 운영자는 이 내용을 볼 수 없습니다. 앱을 삭제하면 이 정보도 함께 지워집니다.</p>
+
+<h2>2. 서버에 저장되는 정보</h2>
+<p>AI 기능과 나만의 카드 충전을 위해 앱은 계정 서버(Supabase, 서울 리전)를 씁니다. 서버에는 다음만 저장됩니다.</p>
+<table>
+ <tr><th>정보</th><th>목적</th><th>보관 기간</th></tr>
+ <tr><td>무작위 계정 번호 (설치마다 자동으로 생성)</td><td>AI 기능 이용, 남은 장수 관리</td><td>계정 삭제 시까지</td></tr>
+ <tr><td>Apple로 로그인한 경우 Apple이 주는 사용자 식별자 (이름과 이메일은 요청하지 않음)</td><td>같은 Apple 계정의 다른 기기에서 남은 장수 이어 쓰기</td><td>계정 삭제 시까지</td></tr>
+ <tr><td>남은 장수와 충전·사용·환불 내역</td><td>나만의 카드 관리</td><td>계정 삭제 시까지</td></tr>
+ <tr><td>기능별 하루 이용 횟수</td><td>과도한 이용 방지</td><td>계정 삭제 시까지</td></tr>
+ <tr><td>App Store 거래 번호, 상품, 구매 시각</td><td>구매 확인, 환불 처리, 중복 지급 방지</td><td>계정 삭제 후에도 보관 (환불 대응). 계정과의 연결은 끊김</td></tr>
+ <tr><td>Apple 식별자를 되돌릴 수 없게 변환한 값 (해시)</td><td>무료 카드를 Apple 계정마다 한 번만 지급</td><td>계정 삭제 후에도 보관</td></tr>
+</table>
+<p>서버는 목표 글, 사진, 만든 그림을 저장하지 않습니다.</p>
+
+<h2>3. AI 처리를 위해 OpenAI로 보내는 정보</h2>
+<p>목표 검토, 전설 설계, 카드 그림, 캐릭터 그림을 만들 때 다음 내용이 OpenAI(미국)로 전송됩니다. 처음 사용할 때 앱에서 동의를 받습니다.</p>
+<ul>
+ <li>목표 글, 고른 능력, 그림 스타일과 구도</li>
+ <li>내 캐릭터를 만들거나 쓸 때 사용자가 고른 사진</li>
+</ul>
+<p>OpenAI는 API로 받은 내용을 모델 학습에 쓰지 않습니다. 다만 OpenAI 정책에 따라 남용 감시를 위해 최대 30일 동안 보관한 뒤 삭제할 수 있습니다. 개발자 본인의 OpenAI 키를 직접 입력한 경우에는 앱이 OpenAI와 직접 통신합니다.</p>
+
+<h2>4. 결제</h2>
+<p>결제는 Apple이 처리합니다. 앱과 운영자는 카드 번호 등 결제 정보를 받지 않으며, Apple이 알려 주는 거래 정보(위 표)만 확인합니다.</p>
+
+<h2>5. 계정 삭제</h2>
+<p>앱의 설정 → 나만의 카드 → 계정 삭제에서 언제든 계정을 지울 수 있습니다. 삭제하면 서버의 계정, 남은 장수, 이용 내역이 지워지고 Apple 로그인 연결도 해제됩니다. 기기에 저장된 카드와 기록은 그대로 남습니다. 남은 장수는 복구되지 않습니다.</p>
+
+<h2>6. 제3자 제공과 처리 위탁</h2>
+<table>
+ <tr><th>업체</th><th>내용</th></tr>
+ <tr><td>Supabase Inc.</td><td>계정 서버와 데이터베이스 운영 (서울 리전)</td></tr>
+ <tr><td>OpenAI, L.L.C. (미국)</td><td>AI 글과 그림 생성 (위 3항)</td></tr>
+ <tr><td>Apple Inc.</td><td>Apple로 로그인, 앱 내 구입</td></tr>
+</table>
+<p>이 밖에 개인정보를 판매하거나 다른 곳에 제공하지 않습니다.</p>
+
+<h2>7. 아동</h2>
+<p>앱은 아동을 대상으로 개인정보를 일부러 수집하지 않습니다. 보호자가 자녀의 정보 삭제를 원하면 아래로 연락해 주세요.</p>
+
+<h2>8. 문의</h2>
+<p>개인정보 관련 문의: <strong>cucumen@gmail.com</strong><br>운영자: <strong>정영덕</strong></p>
+<p class="muted">방침이 바뀌면 이 페이지에 시행일과 함께 알립니다.</p>
+</section>
+
+<hr>
+
+<section id="en">
+<h1>Privacy Policy</h1>
+<p class="muted">Be a Legend (나는 전설이다) · Effective October 13, 2026</p>
+
+<p>This policy explains what the iPhone app "Be a Legend" (the "App") sends, where, and for how long it is kept. The App shows no ads, does not track you, and uses no analytics.</p>
+
+<h2>1. Stored only on your device</h2>
+<p>Your goals, cards, card pictures, reviews, stamps, legends, characters and settings stay on your iPhone. We cannot see them. Deleting the App deletes them.</p>
+
+<h2>2. Stored on our server</h2>
+<p>For AI features and custom card purchases, the App uses an account server (Supabase, Seoul region). It stores only:</p>
+<table>
+ <tr><th>Data</th><th>Purpose</th><th>Kept</th></tr>
+ <tr><td>A random account ID created on install</td><td>AI features, card balance</td><td>Until you delete the account</td></tr>
+ <tr><td>Your Apple user identifier if you sign in with Apple (no name or email is requested)</td><td>Keep your balance across devices</td><td>Until you delete the account</td></tr>
+ <tr><td>Balance and top-up/use/refund history</td><td>Custom card balance</td><td>Until you delete the account</td></tr>
+ <tr><td>Daily use counts per feature</td><td>Preventing abuse</td><td>Until you delete the account</td></tr>
+ <tr><td>App Store transaction ID, product, purchase time</td><td>Verifying purchases, refunds</td><td>Kept after deletion for refunds, unlinked from the account</td></tr>
+ <tr><td>A one-way hash of the Apple identifier</td><td>Free cards once per Apple ID</td><td>Kept after deletion</td></tr>
+</table>
+<p>The server does not store your goal text, photos or generated pictures.</p>
+
+<h2>3. Sent to OpenAI for AI processing</h2>
+<p>When reviewing goals, designing legends, or drawing card and character pictures, the App sends the following to OpenAI (USA), after asking for your consent the first time:</p>
+<ul>
+ <li>Goal text, chosen abilities, art style and composition</li>
+ <li>A photo you choose, when making or using your own character</li>
+</ul>
+<p>OpenAI does not use API data to train its models. Under its policy it may keep it for up to 30 days for abuse monitoring, then delete it.</p>
+
+<h2>4. Payments</h2>
+<p>Apple processes all payments. We never receive card details; we only check the transaction data Apple provides (see above).</p>
+
+<h2>5. Deleting your account</h2>
+<p>Settings → Custom cards → Delete account. This deletes your server account, balance and history, and revokes Sign in with Apple. Cards on your device remain. Remaining cards cannot be restored.</p>
+
+<h2>6. Service providers</h2>
+<p>Supabase Inc. (account server, Seoul region), OpenAI, L.L.C. (AI text and images), Apple Inc. (Sign in with Apple, In-App Purchase). We do not sell or otherwise share personal data.</p>
+
+<h2>7. Children</h2>
+<p>We do not knowingly collect personal data from children. Parents may contact us to delete data.</p>
+
+<h2>8. Contact</h2>
+<p><strong>cucumen@gmail.com</strong> · <strong>Joung young doc</strong></p>
+</section>
+</main>
+</body>
+</html>
